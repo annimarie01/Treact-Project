@@ -17,14 +17,14 @@ section {
     padding: 0 32px;
 }
 
+.container {
+    padding: 96px 0;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.container {
-    padding: 96px 0;
 }
 
 .purple {
