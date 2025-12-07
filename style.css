@@ -276,3 +276,21 @@ header {
   border: 1px solid #e5e7eb;
   border-radius: 500px;
 }
+
+.feature__img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature__text {
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
+.feature__para {
+  margin-top: 16px;
+  font-size: 16px;
+  max-width: calc(634px / 3);
+  line-height: 2;
+  font-weight: 500;
+}
