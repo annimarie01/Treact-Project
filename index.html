@@ -6,6 +6,7 @@
     <title>Treact</title>
     <link rel="stylesheet" href="style.css">\
     <script src="https://kit.fontawesome.com/9bb78053ee.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -23,6 +24,22 @@
                         <a class="nav__link login" href="">Login</a>
                         <a class="nav__link nav__link--primary" href="">Sign Up</a>
                 </div>
+                <button class="btn__menu" onclick="openMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()" >
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                     <div class="menu__links">
+                        <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                        <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                        <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                        <a href="#contact us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                        <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+                        <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+                     </div>
+                    </div>
             </div>
         </nav>
         <header>
@@ -372,7 +389,7 @@
             </div>
         </section>
         <section id="start">
-            <div class="container"></div>
+            <div class="container">
             <div class="row">
                 <svg viewBox="0 0 600 600" class="start__blob--1">
               <g transform="translate(300,300)">
@@ -393,8 +410,79 @@
                     </div>
                 </div>
             </div>
-            </div>
+         </div>  
+        </div>
         </section>
     </main>
+    <footer>
+        <svg viewBox="0 0 600 600" class="footer__blob--1">
+        <g transform="translate(300,300)">
+          <path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgba(80,17,204)"></path>
+        </g>
+      </svg>
+      <svg viewBox="0 0 600 600" class="footer__blob--2">
+        <g transform="translate(300,300)">
+          <path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgba(80,17,204)"></path>
+        </g>
+      </svg>
+      <div class="row footer__row">
+        <div class="footer__columns">
+            <div class="footer__column">
+                <div class="footer__column--title">MAIN</div>
+                <a href="" class="footer__column--link">Blog</a>
+                <a href="" class="footer__column--link">FAQs</a>
+                <a href="" class="footer__column--link">Support</a>
+                <a href="" class="footer__column--link">About Us</a>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column--title">PRODUCT</div>
+                <a href="" class="footer__column--link">Log In</a>
+                <a href="" class="footer__column--link">Personal</a>
+                <a href="" class="footer__column--link">Business</a>
+                <a href="" class="footer__column--link">Team</a>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column--title">PRESS</div>
+                <a href="" class="footer__column--link">Logos</a>
+                <a href="" class="footer__column--link">Events</a>
+                <a href="" class="footer__column--link">Stories</a>
+                <a href="" class="footer__column--link">Office</a>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column--title">TEAM</div>
+                <a href="" class="footer__column--link">Career</a>
+                <a href="" class="footer__column--link">Founders</a>
+                <a href="" class="footer__column--link">Culture</a>
+                <a href="" class="footer__column--link">Onboarding</a>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column--title">LEGAL</div>
+                <a href="" class="footer__column--link">GDPR</a>
+                <a href="" class="footer__column--link">Privacy Policy</a>
+                <a href="" class="footer__column--link">Terms of Service</a>
+                <a href="" class="footer__column--link">Disclaimer</a>
+            </div>
+        </div>
+        <div class="footer__divider"></div>
+        <div class="footer__bottom">
+            <div class="footer__logo">
+                <img src="/assets/assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="" class="footer__logo--img">
+                <h5 class="footer__logo--text">Treact Inc.</h5>
+            </div>
+            <div class="footer__copyright">&copy; 2025 Treact Inc. All Rights Reserverd</div>
+            <div class="footer__socials">
+                <a href="" class="footer__social--link">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="" class="footer__social--link">
+                   <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="" class="footer__social--link">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
