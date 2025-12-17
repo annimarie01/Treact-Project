@@ -56,6 +56,7 @@ p {
   color: #fff;
   font-weight: bold;
   transition: all 300ms;
+
 }
 
 button {
@@ -161,6 +162,8 @@ nav {
 .menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
+  display: flex;
+  transform: translateX(0);
 }
 
 .menu--open {
@@ -183,6 +186,14 @@ nav {
     margin: 8px 0;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
+}
+
+.menu__link--primary {
+    color: #f7fafc;
+    padding: 12px 32px;
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
 }
 
 .btn__menu--close {
@@ -316,6 +327,7 @@ header {
     font-weight: 900;
     color: rgb(36, 62, 99);
     line-height: 1.5;
+    margin: 16px 0;
     letter-spacing: 0.025em;
   }
 
@@ -387,8 +399,6 @@ header {
   width: 50%;
   max-width: 576px;
   margin-right: 64px;
-  display: flex;
-  flex-direction: column;
 }
 
 .quality__img--wrapper {
@@ -1158,7 +1168,7 @@ footer {
   .header__img {
     max-width: 512px;
   }
-  .plan__button {
+  .plan__btn {
     max-width: none;
   }
 
@@ -1277,11 +1287,11 @@ footer {
     width: 100%;
     max-width: 512px;
   }
-  .start__buttons {
+  .start__btns {
     width: auto;
     margin-top: 24px;
   }
-  .start__button {
+  .start__btn {
     padding: 16px 32px;
   }
   footer {
@@ -1464,7 +1474,7 @@ footer {
     height: 64px;
     width: 64px;
   }
-  .testimonial__buttons {
+  .testimonial__btns {
     margin-top: 32px;
   }
   .start__title {
@@ -1473,17 +1483,17 @@ footer {
   .start__container {
     padding: 80px 0;
   }
-  .start__buttons {
+  .start__btns {
     flex-direction: column;
   }
-  .start__button:nth-child(1) {
+  .start__btn:nth-child(1) {
     margin-right: 0;
   }
-  .start__button {
+  .start__btn {
     padding: 12px 24px;
     font-size: 14px;
   }
-  .start__button:nth-child(2) {
+  .start__btn:nth-child(2) {
     margin-top: 16px;
   }
   main {
